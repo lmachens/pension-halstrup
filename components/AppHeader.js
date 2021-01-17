@@ -47,7 +47,7 @@ function AppHeader() {
   }, [pathname]);
 
   return (
-    <header className="sticky-top">
+    <header className="fixed-top">
       <nav className="navbar navbar-expand-md navbar-light bg-light">
         <div className="container-fluid">
           <Link href="/#">
