@@ -1,5 +1,5 @@
 This is the source for a guesthouse website with a Ligthouse score of 100.  
-[Pension Halstrup](https://pensionhalstrup.de/)
+[Pension Halstrup](https://pension-halstrup.de/)
 
 ## Getting Started
 
