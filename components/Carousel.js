@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import RatioImg from "./RatioImg";
+import classNames from "classnames";
 
 function Carousel({ images }) {
   const carouselEl = useRef();
@@ -12,14 +13,16 @@ function Carousel({ images }) {
         interval: 2000,
       });
     });
-    document.querySelector(".carousel-item").classList.add("active");
   }, []);
 
   return (
     <div ref={carouselEl} className="carousel slide">
       <div className="carousel-inner">
-        {images.map((image) => (
-          <div className="carousel-item" key={image.id}>
+        {images.map((image, i) => (
+          <div
+            className={classNames("carousel-item", { active: i === 0 })}
+            key={image.id}
+          >
             <RatioImg src={image.url} alt={image.alternativeText} />
           </div>
         ))}
