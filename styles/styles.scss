@@ -1,0 +1,98 @@
+// Variable overrides
+
+// Required
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/utilities";
+
+// Optional
+@import "../node_modules/bootstrap/scss/root";
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/type";
+@import "../node_modules/bootstrap/scss/images";
+@import "../node_modules/bootstrap/scss/containers";
+@import "../node_modules/bootstrap/scss/grid";
+@import "../node_modules/bootstrap/scss/transitions";
+@import "../node_modules/bootstrap/scss/nav";
+@import "../node_modules/bootstrap/scss/navbar";
+@import "../node_modules/bootstrap/scss/carousel";
+@import "../node_modules/bootstrap/scss/dropdown";
+@import "../node_modules/bootstrap/scss/modal";
+@import "../node_modules/bootstrap/scss/buttons";
+@import "../node_modules/bootstrap/scss/helpers";
+@import "../node_modules/bootstrap/scss/utilities/api";
+
+html {
+  scroll-padding-top: 56px;
+}
+
+body {
+  position: relative;
+}
+
+// Custom styles
+.ratio-img {
+  height: 100%;
+  min-width: 230px;
+  padding-top: 62%;
+  position: relative;
+  overflow: hidden;
+}
+
+.ratio-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+iframe {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.preview {
+  text-align: center;
+  position: relative;
+}
+
+.preview img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.preview p {
+  margin: 0;
+}
+
+.preview div {
+  position: absolute;
+  min-height: 130px;
+  width: 300px;
+  top: calc(50% - 65px);
+  left: calc(50% - 150px);
+  background: #fff;
+  padding: 8px;
+  display: grid;
+  place-items: center;
+  row-gap: 4px;
+}
+
+.preview a {
+  font-size: 0.75em;
+}
+
+.avatar {
+  height: 260px;
+  object-fit: contain;
+}
+
+.carousel,
+.carousel-inner,
+.carousel-item {
+  height: 100%;
+}
